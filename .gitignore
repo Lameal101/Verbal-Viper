@@ -1,2 +1,8 @@
 venv/
 venv
+
+test.py/
+test.py
+
+.env/
+.env
