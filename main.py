@@ -7,15 +7,19 @@ CORS(app)
 
 @app.route("/") #python decorators
 def hello_world():
-    return "<h2>this website is working</h2>"
+    return render_template("index.html")
 
 @app.route("/data",methods = ["GET","POST"])
 def data():
     if request.method == "POST":
-        print(request.json)
-        print(request.json["title"])
-        lyrics = rg(request.json["title"])
-        return lyrics
+        lyrics = "can not be fetched"
+        try:
+            lyrics = rg(request.form["title"])
+            print("check this out")
+        except:
+            pass
+
+        return f"<pre>{lyrics}</pre>"
     return "<h1>HEAD</h1>"
 
 if __name__ == "__main__":
