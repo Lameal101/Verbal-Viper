@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "forest">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit Title</title>
+    <title>Rap Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+<style>
+.dancing-script{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style:normal;
+  
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
 <body>
-    <h1>Enter a Title</h1>
-    <form action="/data" method="POST">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required>
-        <button type="submit">Submit</button>
+    <div class = "flex items-center justify-center flex-col p-20 gap-5">
+        <h1 class = "bebas-neue-regular text-4xl">What You Wanna Yap About??</h1>
+    <form action="/data" method="POST" class = "flex items-center justify-center w-full">
+        <input required name ="title"
+        type="text"
+        placeholder="Type here"
+        class="input input-bordered input-error w-96"/>
+        <button class="btn btn-error" type = "submit">Submit</button>
     </form>
+    <div>
+        <center>
+        <pre class = "dancing-script">
+(Verse 1)
+Yo, listen up, let me share a tale,
+'Bout a woman, who's always on the trail,
+She's the one who holds it down, day and night,
+The mom, the rock, the one who's always right,
+
+She's the glue that holds the family tight,
+The one who keeps it real, no matter the fight,
+She's the one who wipes away the tears,
+And calms the fears, through all the years,
+
+(Chorus)
+Moms, moms, they're the best,
+Always on the move, never at rest,
+They're the ones who give and give,
+And never ask for anything to live,
+
+(Verse 2)
+She's the one who teaches us to be strong,
+To stand up tall, and never be wrong,
+She's the one who shows us how to love,
+And how to forgive, from above,
+
+She's the one who's always there to guide,
+Through the ups and downs, the highs and the slide,
+She's the one who's always on our side,
+And helps us find our way, with a gentle pride,
+
+(Bridge)
+So here's to the moms, who work so hard,
+Who sacrifice, and never get scarred,
+Who put their needs last, and our needs first,
+And always put a smile, on our worst,
+
+(Chorus)
+Moms, moms, they're the best,
+Always on the move, never at rest,
+They're the ones who give and give,
+And never ask for anything to live,
+
+(Outro)
+So let's give it up, for the moms in our lives,
+Who show us love, and never say goodbye,
+They're the ones who make us strong,
+And help us grow, all day long.
+        </pre>
+        </center>
+    </div>
+    </div>
 </body>
 </html>
